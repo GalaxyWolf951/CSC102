@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2 Basics</title>
+</head>
+<!-- h1 is the page title, there should be 1 and only 1 h1 on a page -->
+    <h1>Welcome to my Week 2 JavaScript Basics Page</h1>
+
+<!-- subheadings for the 4 foundations of programming--> 
+
+<h2>Variables</h2>
+
+<!--Our Javascript Code goes in between opening and closing script tags -->
+<script>
+    // single line Javascript Comment
+
+     // multi-line JavaScript Comment*/
+
+    // let's create a variable with a default value
+    // var means that you want to create a variable
+    var firstname = 'Seth'; 
+    var lastname = 'Barler';
+</script>
+
+ <h2>Functions</h2>
+
+ ,<script>
+ // let's create a function
+  // functions allow you to reuse code 
+   // functions are awesome; use them as much as possible 
+    // to create a function use the JavaScript keyword function 
+     // then come up with a descriptive function name 
+      // there will be () 
+       // the function code lives in {}
+        function runCalc(){
+// create 2 variables to hold nuumbers that the user gives me-->
+var num1 = 0;
+var num2 = 0;
+
+    // let's gather a number from the user
+    num1 = prompt(firstname + "Please enter number 1: ");
+    num1 = prompt(firstname + "Please enter number 2: ");
+
+    // because JavaScript is Loosely/Dynamically Typed, cast the inputs as numbers
+    var sum = parseInt(num1) + parseInt(num2);
+    alert("the sum is:" + sum);
+
+    // return the sum of num1 + num2
+    return sum;
+}
+
+ // this code calls the function that we wrote
+   var TheSum = runCalc();
+
+</script>
+
+<h2>Decision Logic</h2>
+
+<script>
+    // create a variable so we can test the value
+    var age = 7; // single = assignment
+    // the value of the left side of the = becomes the same as on the right
+
+    // boolean holds true or false
+    var hasDriversPermit = true;
+
+
+    // test the age and display a message depending on the age
+    if (age == 5){ // double == is to check equality - are the values the same
+        console.log ("age is 5");
+    }
+    else{ // catch - all if the if statement is not true, the else code will run
+        console.log("age is not 5");
+    }
+
+    // check multiple conditions
+    if (age == 6){ // you can only have 1 if statement in a block of decision logic 
+        console.log("age is 6");
+    }
+    else if (age = 14){ // I Can have many else if statements
+        console.log("age is 14");
+    }  // if age is 15 or 16, this would be true
+    else if (age == 15 || age == 16){
+        console.log("age is 15 or 16");
+    }  // if age is 15 and 16, this would be true
+    else if ((age == 15) && (hasDriversPermit)){
+        console.log("they can drive with an adult");
+    }
+    else{ // catch all - if none of the previous conditions were true, run this code
+
+        console.log("some other age");
+    }
+
+
+</script>
+
+ 
+<h2>Loops</h2>
+</body>
+</html>
